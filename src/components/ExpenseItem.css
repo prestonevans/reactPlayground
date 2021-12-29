@@ -16,6 +16,17 @@
     flex-grow: 1;
     text-align: center;
 }
+.dateBox {
+	background-color: rgba(0, 0, 0,.5);
+	padding: 0.5em 1em;
+	border-radius: 30px;
+	transform: scale(.8);
+}
+.expense-item :first-child {
+	display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 .expense-item__description {
 	display: flex;
 	justify-content: center;
@@ -37,4 +48,14 @@
 	background-color: #40005d;
 	border: 1px solid white;
 	border-radius: 12px;
+}
+.dateBox {
+	font-size: 1.5rem;
+	color: white;
+}
+.dateBox :not(:nth-child(2)) {
+	font-weight: 900;
+}
+.dateBox :last-child {
+	font-size: 2.5rem;
 }

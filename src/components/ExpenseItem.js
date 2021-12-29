@@ -1,12 +1,19 @@
 import './ExpenseItem.css'
 
-export default function ExpenseItem() {
+export default function ExpenseItem(props) {
+	const {title,amount,date} = props
 	return (
 		<div className='expense-item'>
-			<div>December 28 2021</div>
+			<div className='date'>
+				<div className='dateBox'>
+				<div>{date.toLocaleString('default', { month: 'long' })}</div>
+				<div>{date.getFullYear()}</div>
+				<div>{date.getDay()}</div>
+				</div>
+			</div>
 			<div className ='expense-item__description'>
-				<h2>Car Insurance</h2>
-				<div className='expense-item__price'>$400.55</div>
+				<h2>{title}</h2>
+				<div className='expense-item__price'>{amount}</div>
 			</div>
 		</div>
 	);
