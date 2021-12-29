@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 html {
@@ -16,10 +15,4 @@ body {
   margin: 0;
   background-color: #3f3f3f;
 }
-.test {
-  display: flex;
-  align-items: center;
-}
-.test *:not(:last-child) {
-  margin-right: 2rem;
-}
+
