@@ -1,16 +1,11 @@
+import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css'
 
 export default function ExpenseItem(props) {
-	const {title,amount,date} = props
+	const { title, amount, date } = props;
 	return (
 		<div className='expense-item'>
-			<div className='date'>
-				<div className='dateBox'>
-				<div>{date.toLocaleString('default', { month: 'long' })}</div>
-				<div>{date.getFullYear()}</div>
-				<div>{date.getDay()}</div>
-				</div>
-			</div>
+			<ExpenseDate date={date}/>
 			<div className ='expense-item__description'>
 				<h2>{title}</h2>
 				<div className='expense-item__price'>{amount}</div>

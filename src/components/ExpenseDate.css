@@ -1,0 +1,13 @@
+.dateBox {
+	background-color: rgba(0, 0, 0,.5);
+	padding: 0.5em 1em;
+	border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+}
+.dateBox :not(:nth-child(2)) {
+	font-weight: 900;
+}
+.dateBox :last-child {
+	font-size: 2rem;
+}
